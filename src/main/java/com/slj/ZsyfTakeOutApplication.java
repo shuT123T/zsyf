@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Slf4j
 @SpringBootApplication
 @EnableTransactionManagement
-@EnableCaching
+//@EnableCaching
 public class ZsyfTakeOutApplication {
 
     public static void main(String[] args) {

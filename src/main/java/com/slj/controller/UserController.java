@@ -56,7 +56,7 @@ public class UserController {
             //调用阿里云提供的短信服务API完成发送短信
             //SMSUtils.sendMessage("在水一方外卖","",phone,code);
 
-            // 将生成的验证码缓存到redis，设置有效期5分钟
+            // 将生成的验证码缓存到redis，设置有效期2分钟
             redisTemplate.opsForValue().set(phone, code, 2, TimeUnit.MINUTES);
 
             return Result.success("手机验证码短信发送成功");
